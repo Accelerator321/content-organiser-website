@@ -96,7 +96,9 @@ function handleDelete(){
         </button>
     
 
-        <Modal link={link} title={title} video={video} currentBucket={currentBucket} index={index} />
+        {video?<Modal link={link} title={title} video={video} currentBucket={currentBucket} index={index} />
+        : <a  rel="noopener noreferrer" className='btn btn-primary' href={link} target='_blank'>Link</a>
+      }
         
     </>
     );
